@@ -31,12 +31,219 @@ function getSessionId() {
  * @return ehrId generiranega pacienta
  */
 function generirajPodatke(stPacienta) {
-  ehrId = "";
-
-  // TODO: Potrebno implementirati
+  var ehrId = "";
+  
+  var pdata = {
+      p1: {
+          firstNames: "Hulk",
+          lastNames: "Hogan",
+          dateOfBirth: "1953-08-11T01:00"
+      },
+      p2: {
+          firstNames: "John",
+          lastNames: "Doe",
+          dateOfBirth: "1970-01-01T11:01"
+      },
+      p3: {
+          firstNames: "Gabe",
+          lastNames: "Newell",
+          dateOfBirth: "1962-11-03T05:00"
+      }
+  };
+  
+  var composition_data = {
+    p1: [{
+            "ctx/time": "2014-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 120,
+            "vital_signs/blood_pressure/any_event/diastolic": 80,
+            "vital_signs/height_length/any_event/body_height_length": 201,
+            "vital_signs/body_weight/any_event/body_weight": 137
+        },
+        {
+            "ctx/time": "2015-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 119,
+            "vital_signs/blood_pressure/any_event/diastolic": 80,
+            "vital_signs/height_length/any_event/body_height_length": 201,
+            "vital_signs/body_weight/any_event/body_weight": 140
+        },
+        {
+            "ctx/time": "2016-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 120,
+            "vital_signs/blood_pressure/any_event/diastolic": 80,
+            "vital_signs/height_length/any_event/body_height_length": 201,
+            "vital_signs/body_weight/any_event/body_weight": 137
+        }
+    ],
+    
+    p2: [{
+            "ctx/time": "2014-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 150,
+            "vital_signs/blood_pressure/any_event/diastolic": 70,
+            "vital_signs/height_length/any_event/body_height_length": 105,
+            "vital_signs/body_weight/any_event/body_weight": 600      
+        },
+        {
+            "ctx/time": "2015-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 148,
+            "vital_signs/blood_pressure/any_event/diastolic": 72,
+            "vital_signs/height_length/any_event/body_height_length": 106,
+            "vital_signs/body_weight/any_event/body_weight": 601      
+        },
+        {
+            "ctx/time": "2016-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 149,
+            "vital_signs/blood_pressure/any_event/diastolic": 70,
+            "vital_signs/height_length/any_event/body_height_length": 106,
+            "vital_signs/body_weight/any_event/body_weight": 605      
+        }
+    ],
+    
+    p3: [{
+            "ctx/time": "2014-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 120,
+            "vital_signs/blood_pressure/any_event/diastolic": 90,
+            "vital_signs/height_length/any_event/body_height_length": 171,
+            "vital_signs/body_weight/any_event/body_weight": 150
+        },
+        {
+            "ctx/time": "2015-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 120,
+            "vital_signs/blood_pressure/any_event/diastolic": 80,
+            "vital_signs/height_length/any_event/body_height_length": 171,
+            "vital_signs/body_weight/any_event/body_weight": 151      
+        },
+        {
+            "ctx/time": "2016-3-19T13:10Z",
+            "ctx/language": "en",
+            "ctx/territory": "CA",
+            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event/systolic": 120,
+            "vital_signs/blood_pressure/any_event/diastolic": 80,
+            "vital_signs/height_length/any_event/body_height_length": 172,
+            "vital_signs/body_weight/any_event/body_weight": 151      
+        }
+    ]
+  };
+  
+  $.ajax({
+      url: baseUrl + "/ehr",
+      type: "POST",
+      success: function (data) {
+          ehrId = data.ehrId;
+          console.log(ehrId);
+          
+          pdata["p" + stPacienta].partyAdditionalInfo = [
+              {
+                  key: "ehrId",
+                  value: ehrId
+              }
+          ];
+          
+          $.ajax({
+             url: baseUrl + "/demographics/party",
+             type: "POST",
+             contentType: "application/json",
+             data: JSON.stringify(pdata["p" + stPacienta]),
+             success: function(party) {
+                 if (party.action == "CREATE")
+                 {
+                     for (var i=0; i<composition_data["p" + stPacienta].length; i++)
+                     {
+                         $.ajax({
+                             url: baseUrl + "/composition?" + $.param({
+                                 "ehrId": ehrId,
+                                 templateId: "Vital Signs",
+                                 format: "FLAT",
+                                 committer: "Donald Trump"
+                             }),
+                             type: "POST",
+                             contentType: "application/json",
+                             data: JSON.stringify(composition_data["p" + stPacienta][i]),
+                             success: function(res) {
+                                 if (res.action == "CREATE")
+                                    console.log("Composition success: " + JSON.stringify(res));
+                             }
+                         });
+                     }
+                     
+                     $("#status").html("Success");
+                 }
+             }
+          });
+      }
+  });
 
   return ehrId;
 }
 
+function iskanjeEhrId(ehrid) {
+    if (ehrid.length != 36)
+        return;
+    
+    var sdata = [{ key: "ehrId", value: ehrid }];
+    $.ajax({
+      url: baseUrl + "/demographics/party/query",
+      type: "POST",
+      contentType: "application/json",
+      data: JSON.stringify(sdata),
+      success: function(res) {
+          console.log(res);
+      }
+    });
+}
+
+
 
 // TODO: Tukaj implementirate funkcionalnost, ki jo podpira vaša aplikacija
+
+$(document).ready(function() {
+   var sessionId = getSessionId();
+   $.ajaxSetup({
+       headers: {
+           "Ehr-session": sessionId
+       }
+   });
+      
+   $("#btngen").click(function(event) {
+       generirajPodatke(1);
+       generirajPodatke(2);
+       generirajPodatke(3);
+   });
+   
+   $("#btnIskanje").click(function(event) {
+        iskanjeEhrId($("#ehrid").val());
+   });
+});
