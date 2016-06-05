@@ -52,110 +52,92 @@ function generirajPodatke(stPacienta) {
   };
   
   var composition_data = {
-    p1: [{
+    p1: {
             "ctx/time": "2014-3-19T13:10Z",
             "ctx/language": "en",
             "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 120,
-            "vital_signs/blood_pressure/any_event/diastolic": 80,
-            "vital_signs/height_length/any_event/body_height_length": 201,
-            "vital_signs/body_weight/any_event/body_weight": 137
-        },
-        {
-            "ctx/time": "2015-3-19T13:10Z",
-            "ctx/language": "en",
-            "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 119,
-            "vital_signs/blood_pressure/any_event/diastolic": 80,
-            "vital_signs/height_length/any_event/body_height_length": 201,
-            "vital_signs/body_weight/any_event/body_weight": 140
-        },
-        {
-            "ctx/time": "2016-3-19T13:10Z",
-            "ctx/language": "en",
-            "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 120,
-            "vital_signs/blood_pressure/any_event/diastolic": 80,
-            "vital_signs/height_length/any_event/body_height_length": 201,
-            "vital_signs/body_weight/any_event/body_weight": 137
-        }
-    ],
+            "vital_signs/body_temperature/any_event:0/time": "2014-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:0/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:0/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:0/systolic": 120,
+            "vital_signs/blood_pressure/any_event:0/diastolic": 80,
+            "vital_signs/height_length/any_event:0/body_height_length": 201,
+            "vital_signs/body_weight/any_event:0/body_weight": 137,
+            
+            "vital_signs/body_temperature/any_event:1/time": "2015-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:1/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:1/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:1/systolic": 119,
+            "vital_signs/blood_pressure/any_event:1/diastolic": 80,
+            "vital_signs/height_length/any_event:1/body_height_length": 201,
+            "vital_signs/body_weight/any_event:1/body_weight": 140,
+            
+            "vital_signs/body_temperature/any_event:2/time": "2016-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:2/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:2/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:2/systolic": 120,
+            "vital_signs/blood_pressure/any_event:2/diastolic": 80,
+            "vital_signs/height_length/any_event:2/body_height_length": 201,
+            "vital_signs/body_weight/any_event:2/body_weight": 137
+    },
     
-    p2: [{
+    p2: {
             "ctx/time": "2014-3-19T13:10Z",
             "ctx/language": "en",
             "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 150,
-            "vital_signs/blood_pressure/any_event/diastolic": 70,
-            "vital_signs/height_length/any_event/body_height_length": 105,
-            "vital_signs/body_weight/any_event/body_weight": 600      
-        },
-        {
-            "ctx/time": "2015-3-19T13:10Z",
-            "ctx/language": "en",
-            "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 148,
-            "vital_signs/blood_pressure/any_event/diastolic": 72,
-            "vital_signs/height_length/any_event/body_height_length": 106,
-            "vital_signs/body_weight/any_event/body_weight": 601      
-        },
-        {
-            "ctx/time": "2016-3-19T13:10Z",
-            "ctx/language": "en",
-            "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 149,
-            "vital_signs/blood_pressure/any_event/diastolic": 70,
-            "vital_signs/height_length/any_event/body_height_length": 106,
-            "vital_signs/body_weight/any_event/body_weight": 605      
-        }
-    ],
+            "vital_signs/body_temperature/any_event:0/time": "2014-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:0/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:0/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:0/systolic": 150,
+            "vital_signs/blood_pressure/any_event:0/diastolic": 70,
+            "vital_signs/height_length/any_event:0/body_height_length": 105,
+            "vital_signs/body_weight/any_event:0/body_weight": 600,
+            
+            "vital_signs/body_temperature/any_event:1/time": "2015-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:1/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:1/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:1/systolic": 148,
+            "vital_signs/blood_pressure/any_event:1/diastolic": 72,
+            "vital_signs/height_length/any_event:1/body_height_length": 106,
+            "vital_signs/body_weight/any_event:1/body_weight": 601,
+            
+            "vital_signs/body_temperature/any_event:2/time": "2016-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:2/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:2/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:2/systolic": 149,
+            "vital_signs/blood_pressure/any_event:2/diastolic": 70,
+            "vital_signs/height_length/any_event:2/body_height_length": 106,
+            "vital_signs/body_weight/any_event:2/body_weight": 605          
+    },
     
-    p3: [{
+    p3: {
             "ctx/time": "2014-3-19T13:10Z",
             "ctx/language": "en",
             "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 120,
-            "vital_signs/blood_pressure/any_event/diastolic": 90,
-            "vital_signs/height_length/any_event/body_height_length": 171,
-            "vital_signs/body_weight/any_event/body_weight": 150
-        },
-        {
-            "ctx/time": "2015-3-19T13:10Z",
-            "ctx/language": "en",
-            "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 120,
-            "vital_signs/blood_pressure/any_event/diastolic": 80,
-            "vital_signs/height_length/any_event/body_height_length": 171,
-            "vital_signs/body_weight/any_event/body_weight": 151      
-        },
-        {
-            "ctx/time": "2016-3-19T13:10Z",
-            "ctx/language": "en",
-            "ctx/territory": "CA",
-            "vital_signs/body_temperature/any_event/temperature|magnitude": 37.1,
-            "vital_signs/body_temperature/any_event/temperature|unit": "°C",
-            "vital_signs/blood_pressure/any_event/systolic": 120,
-            "vital_signs/blood_pressure/any_event/diastolic": 80,
-            "vital_signs/height_length/any_event/body_height_length": 172,
-            "vital_signs/body_weight/any_event/body_weight": 151      
-        }
-    ]
+            "vital_signs/body_temperature/any_event:0/time": "2014-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:0/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:0/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:0/systolic": 120,
+            "vital_signs/blood_pressure/any_event:0/diastolic": 90,
+            "vital_signs/height_length/any_event:0/body_height_length": 171,
+            "vital_signs/body_weight/any_event:0/body_weight": 150,
+            
+            "vital_signs/body_temperature/any_event:1/time": "2015-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:1/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:1/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:1/systolic": 120,
+            "vital_signs/blood_pressure/any_event:1/diastolic": 80,
+            "vital_signs/height_length/any_event:1/body_height_length": 171,
+            "vital_signs/body_weight/any_event:1/body_weight": 151,
+            
+            "vital_signs/body_temperature/any_event:2/time": "2016-3-19T13:10Z",
+            "vital_signs/body_temperature/any_event:2/temperature|magnitude": 37.1,
+            "vital_signs/body_temperature/any_event:2/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:2/systolic": 120,
+            "vital_signs/blood_pressure/any_event:2/diastolic": 80,
+            "vital_signs/height_length/any_event:2/body_height_length": 172,
+            "vital_signs/body_weight/any_event:2/body_weight": 151              
+    }
   };
   
   $.ajax({
@@ -180,9 +162,7 @@ function generirajPodatke(stPacienta) {
              success: function(party) {
                  if (party.action == "CREATE")
                  {
-                     for (var i=0; i<composition_data["p" + stPacienta].length; i++)
-                     {
-                         $.ajax({
+                     $.ajax({
                              url: baseUrl + "/composition?" + $.param({
                                  "ehrId": ehrId,
                                  templateId: "Vital Signs",
@@ -191,17 +171,17 @@ function generirajPodatke(stPacienta) {
                              }),
                              type: "POST",
                              contentType: "application/json",
-                             data: JSON.stringify(composition_data["p" + stPacienta][i]),
+                             data: JSON.stringify(composition_data["p" + stPacienta]),
                              success: function(res) {
                                  if (res.action == "CREATE")
                                     console.log("Composition success: " + JSON.stringify(res));
                              }
-                         });
-                     }
-                     
-                     $("#status").html("Success");
+                      });
                  }
-             }
+                     
+                 $("#status").html("Success");
+                 $("<option value=\"" + ehrId + "\">" + pdata["p" + stPacienta].firstNames + " " + pdata["p" + stPacienta].lastNames + "</option>").appendTo("#pacienta");
+            }
           });
       }
   });
@@ -221,8 +201,11 @@ function iskanjeEhrId(ehrid) {
       data: JSON.stringify(sdata),
       success: function(res) {
           console.log(res);
+          return res.parties;
       }
     });
+    
+    return [];
 }
 
 
@@ -246,4 +229,18 @@ $(document).ready(function() {
    $("#btnIskanje").click(function(event) {
         iskanjeEhrId($("#ehrid").val());
    });
+   
+   $("#pacienta").change(function() {
+       var pacienta = iskanjeEhrId($(this).val());
+       console.log(pacienta);
+       $.ajax({
+           url: baseUrl + "/template/" + encodeURIComponent("Vital Signs") + "?" + $.param({
+               "ehrId": $(this).val(),
+               
+           }),
+           type: "GET",
+           contentType: "application/json",
+       })
+       
+   })
 });
