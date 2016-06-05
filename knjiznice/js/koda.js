@@ -181,6 +181,8 @@ function generirajPodatke(stPacienta) {
                      
                  $("#status").html("Success");
                  $("<option value=\"" + ehrId + "\">" + pdata["p" + stPacienta].firstNames + " " + pdata["p" + stPacienta].lastNames + "</option>").appendTo("#pacienta");
+                 if ($("#pacienta").is(".hidden"))
+                    $("#pacienta").toggleClass("visible").toggleClass("hidden");
             }
           });
       }
@@ -236,10 +238,12 @@ $(document).ready(function() {
        $.ajax({
            url: baseUrl + "/template/" + encodeURIComponent("Vital Signs") + "?" + $.param({
                "ehrId": $(this).val(),
-               
            }),
            type: "GET",
            contentType: "application/json",
+           success: function(res) {
+               console.log(res.webTemplate);
+           }
        })
        
    })
