@@ -208,8 +208,11 @@ function generirajPodatke(stPacienta) {
                      
                  $("#status").html("Success");
                  $("<option value=\"" + ehrId + "\">" + pdata["p" + stPacienta].firstNames + " " + pdata["p" + stPacienta].lastNames + "</option>").appendTo("#pacienta");
-                 if ($("#pacienta").is(".hidden"))
-                    $("#pacienta").toggleClass("visible").toggleClass("hidden");
+                 if ($("#pacienta").hasClass("hidden"))
+                 {
+                    $("#pacienta").addClass("visible");
+                    $("#pacienta").removeClass("hidden");
+                 }
             }
           });
       }
@@ -262,18 +265,39 @@ $(document).ready(function() {
    
    $("#pacienta").change(function() {
        var ehrId = $(this).val();
+       if (ehrId == -1)
+        return;
+        
        //var pacienta = iskanjeEhrId(ehrId);
        //console.log("Pacienta = " + pacienta);
        $.ajax({
            url: baseUrl + "/demographics/ehr/" + ehrId + "/party",
            type: "GET",
            success: function(res) {
-               $("#pinfo").html("<h2>" + res.party.firstNames + " " + res.party.lastNames + "</h2>");
+               if ($("#pinfo").hasClass("hidden"))
+               {
+                    $("#pinfo").addClass("visible");
+                    $("#pinfo").removeClass("hidden");
+               }
+               
+               $("#weight-data").remove();
+               $("#pinfo-header").html("<h3>" + res.party.firstNames + " " + res.party.lastNames + "</h3>Datum Rojstva: " + res.party.dateOfBirth);
+               
                $.ajax({
                    url: baseUrl + "/view/" + ehrId + "/weight",
                    type: "GET",
-                   success: function(res2) {
-                       console.log("View = " + JSON.stringify(res2));
+                   success: function(view) {
+                       console.log("View = " + JSON.stringify(view));
+                       
+                       $("<table id=\"weight-data\" class=\"table table-bordered\"><thead><tr></tr></thead><tbody></tbody></table>").appendTo("#pinfo-body");
+                       $("<th>Datum In Ura</th>").appendTo("#weight-data thead tr");
+                       $("<th>Teža</th>").appendTo("#weight-data thead tr");
+                       $("<th>Enota</th>").appendTo("#weight-data thead tr");
+                       
+                       for(var i=0; i<view.length; i++)
+                       {
+                           $("<tr><td>" + view[i].time + "</td><td>" + view[i].weight + "</td><td>" + view[i].unit + "</td></tr>").appendTo("#weight-data tbody");
+                       }
                    }
                })
            }
