@@ -59,25 +59,34 @@ function generirajPodatke(stPacienta) {
             "vital_signs/body_temperature/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:0/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:0/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:0/systolic": 120,
             "vital_signs/blood_pressure/any_event:0/diastolic": 80,
+            "vital_signs/height_length/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/height_length/any_event:0/body_height_length": 201,
+            "vital_signs/body_weight/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/body_weight/any_event:0/body_weight": 137,
             
             "vital_signs/body_temperature/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:1/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:1/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:1/systolic": 119,
             "vital_signs/blood_pressure/any_event:1/diastolic": 80,
+            "vital_signs/height_length/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/height_length/any_event:1/body_height_length": 201,
+            "vital_signs/body_weight/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/body_weight/any_event:1/body_weight": 140,
             
             "vital_signs/body_temperature/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:2/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:2/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:2/systolic": 120,
             "vital_signs/blood_pressure/any_event:2/diastolic": 80,
+            "vital_signs/height_length/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/height_length/any_event:2/body_height_length": 201,
+            "vital_signs/body_weight/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/body_weight/any_event:2/body_weight": 137
     },
     
@@ -88,25 +97,34 @@ function generirajPodatke(stPacienta) {
             "vital_signs/body_temperature/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:0/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:0/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:0/systolic": 150,
             "vital_signs/blood_pressure/any_event:0/diastolic": 70,
+            "vital_signs/height_length/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/height_length/any_event:0/body_height_length": 105,
+            "vital_signs/body_weight/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/body_weight/any_event:0/body_weight": 600,
             
             "vital_signs/body_temperature/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:1/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:1/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:1/systolic": 148,
             "vital_signs/blood_pressure/any_event:1/diastolic": 72,
+            "vital_signs/height_length/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/height_length/any_event:1/body_height_length": 106,
+            "vital_signs/body_weight/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/body_weight/any_event:1/body_weight": 601,
             
             "vital_signs/body_temperature/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:2/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:2/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:2/systolic": 149,
             "vital_signs/blood_pressure/any_event:2/diastolic": 70,
+            "vital_signs/height_length/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/height_length/any_event:2/body_height_length": 106,
+            "vital_signs/body_weight/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/body_weight/any_event:2/body_weight": 605          
     },
     
@@ -117,25 +135,34 @@ function generirajPodatke(stPacienta) {
             "vital_signs/body_temperature/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:0/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:0/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:0/systolic": 120,
             "vital_signs/blood_pressure/any_event:0/diastolic": 90,
+            "vital_signs/height_length/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/height_length/any_event:0/body_height_length": 171,
+            "vital_signs/body_weight/any_event:0/time": "2014-3-19T13:10Z",
             "vital_signs/body_weight/any_event:0/body_weight": 150,
             
             "vital_signs/body_temperature/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:1/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:1/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:1/systolic": 120,
             "vital_signs/blood_pressure/any_event:1/diastolic": 80,
+            "vital_signs/height_length/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/height_length/any_event:1/body_height_length": 171,
+            "vital_signs/body_weight/any_event:1/time": "2015-3-19T13:10Z",
             "vital_signs/body_weight/any_event:1/body_weight": 151,
             
             "vital_signs/body_temperature/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/body_temperature/any_event:2/temperature|magnitude": 37.1,
             "vital_signs/body_temperature/any_event:2/temperature|unit": "°C",
+            "vital_signs/blood_pressure/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/blood_pressure/any_event:2/systolic": 120,
             "vital_signs/blood_pressure/any_event:2/diastolic": 80,
+            "vital_signs/height_length/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/height_length/any_event:2/body_height_length": 172,
+            "vital_signs/body_weight/any_event:2/time": "2016-3-19T13:10Z",
             "vital_signs/body_weight/any_event:2/body_weight": 151              
     }
   };
@@ -201,8 +228,9 @@ function iskanjeEhrId(ehrid) {
       type: "POST",
       contentType: "application/json",
       data: JSON.stringify(sdata),
+      async: false,
       success: function(res) {
-          console.log(res);
+          console.log("Iskanje EhrID = " + JSON.stringify(res));
           return res.parties;
       }
     });
@@ -233,16 +261,21 @@ $(document).ready(function() {
    });
    
    $("#pacienta").change(function() {
-       var pacienta = iskanjeEhrId($(this).val());
-       console.log(pacienta);
+       var ehrId = $(this).val();
+       //var pacienta = iskanjeEhrId(ehrId);
+       //console.log("Pacienta = " + pacienta);
        $.ajax({
-           url: baseUrl + "/template/" + encodeURIComponent("Vital Signs") + "?" + $.param({
-               "ehrId": $(this).val(),
-           }),
+           url: baseUrl + "/demographics/ehr/" + ehrId + "/party",
            type: "GET",
-           contentType: "application/json",
            success: function(res) {
-               console.log(res.webTemplate);
+               $("#pinfo").html("<h2>" + res.party.firstNames + " " + res.party.lastNames + "</h2>");
+               $.ajax({
+                   url: baseUrl + "/view/" + ehrId + "/weight",
+                   type: "GET",
+                   success: function(res2) {
+                       console.log("View = " + JSON.stringify(res2));
+                   }
+               })
            }
        })
        
